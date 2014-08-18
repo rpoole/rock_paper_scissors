@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-	root 'welcome#index'
+  get 'game/index'
+	root 'game#index'
+
+	post 'game/throw' => 'game#throw'
 end
