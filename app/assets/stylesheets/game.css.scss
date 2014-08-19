@@ -1,3 +1,50 @@
 // Place all the styles related to the game controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.game-result, .sign-select {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 20px;
+	background: lightgrey;
+}
+
+.sign-select {
+	display: block;
+	text-align: center;
+	width: 300px;
+}
+
+.game-result {
+	padding-left: 30px;
+	width: 200px;
+
+	div {
+		margin-bottom: 9px;
+	}
+}
+
+.sign-label {
+	color: white;
+	border-radius: 5px;
+	padding: 2px 3px 4px 4px;
+	font-weight: bold;
+}
+
+.sign-label-rock {
+	@extend .sign-label;
+	background: crimson;
+}
+
+.sign-label-paper {
+	@extend .sign-label;
+	background: blue;
+}
+
+.sign-label-scissors {
+	@extend .sign-label;
+	background: green;
+}
